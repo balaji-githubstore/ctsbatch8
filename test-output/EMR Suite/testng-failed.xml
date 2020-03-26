@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EMR Suite]">
+  <test thread-count="5" name="EMR Test1(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.google.test.LoginTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="invalidCredentialTest"/>
+          <include name="intialization"/>
+        </methods>
+      </class> <!-- com.google.test.LoginTest -->
+    </classes>
+  </test> <!-- EMR Test1(failed) -->
+  <test thread-count="5" name="EMR Test2(failed)">
+    <parameter name="browser" value="ch"/>
+    <classes>
+      <class name="com.google.test.LoginTest">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="invalidCredentialTest"/>
+          <include name="intialization"/>
+        </methods>
+      </class> <!-- com.google.test.LoginTest -->
+    </classes>
+  </test> <!-- EMR Test2(failed) -->
+</suite> <!-- Failed suite [EMR Suite] -->
